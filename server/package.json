@@ -1,0 +1,11 @@
+{
+  "name": "chartcreator",
+  "version": "1.0.0",
+  "description": "Back end for chart creator app",
+  "main": "index.js",
+  "author": "Tony Oliver-Paull",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
