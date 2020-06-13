@@ -27,12 +27,10 @@
 import { mapGetters } from 'vuex';
 import System from './System.vue';
 import { timeSignatures } from '@/lib/constants';
-// import EditMeasure from './EditMeasure.vue';
 
 export default {
   components: {
     System,
-    // EditMeasure,
   },
   data() {
     return {

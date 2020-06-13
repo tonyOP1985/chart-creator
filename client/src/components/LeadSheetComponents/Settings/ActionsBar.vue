@@ -1,7 +1,6 @@
 <template>
   <v-row>
     <v-spacer />
-    <!-- <v-toolbar-items> -->
     <v-btn text @click="newDialog = true">
       <span>Add New</span>
     </v-btn>
@@ -26,7 +25,6 @@
         Edit
       </v-btn>
     </div>
-    <!-- </v-toolbar-items> -->
     <v-spacer />
     <v-dialog
       v-model="keyDialog"
@@ -59,30 +57,18 @@
         @select-key="selectKeys"
       />
     </v-dialog>
-    <v-dialog
-      v-model="addMeasureDialog"
-      width="300"
-    >
-      <!-- <AddMeasure @close-dialog="addMeasureDialog = false" /> -->
-    </v-dialog>
   </v-row>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 import { majorKeys, minorKeys, timeSignatures } from '@/lib/constants';
-// import KeyDialogBox from '@/components/KeyDialogBox.vue';
-// import TimeSignatureDialog from '@/components/TimeSignatureDialog.vue';
 import NewDialog from '@/components/LeadSheetComponents/Settings/CreateNew.vue';
-// import AddMeasure from '@/components/AddMeasure.vue';
 
 
 export default {
   components: {
     NewDialog,
-    // KeyDialogBox,
-    // TimeSignatureDialog,
-    // AddMeasure,
   },
   data() {
     return {
