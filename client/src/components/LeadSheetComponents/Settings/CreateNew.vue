@@ -59,23 +59,22 @@
         </v-row>
       </v-container>
     </v-card-text>
-    <v-card-actions class="pt-0">
-      <v-row justify="end" class="pr-8">
-        <v-btn
-          text
-          color="red"
-          @click="closeDialog"
-        >
-          Cancel
-        </v-btn>
-        <v-btn
-          text
-          color="primary"
-          @click="createSong"
-        >
-          Create
-        </v-btn>
-      </v-row>
+    <v-card-actions class="pt-0 pr-6">
+      <v-spacer />
+      <v-btn
+        text
+        color="red"
+        @click="closeDialog"
+      >
+        Cancel
+      </v-btn>
+      <v-btn
+        text
+        color="primary"
+        @click="createSong"
+      >
+        Create
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>

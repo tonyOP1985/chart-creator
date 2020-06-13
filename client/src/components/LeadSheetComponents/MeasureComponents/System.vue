@@ -43,23 +43,22 @@
             label="Measures"
           />
         </v-card-text>
-        <v-card-actions>
-          <v-row justify="end" class="pr-4">
-            <v-btn
-              text
-              color="red"
-              @click="editSystem"
-            >
-              Cancel
-            </v-btn>
-            <v-btn
-              text
-              color="cyan"
-              @click="setMeasures"
-            >
-              Create
-            </v-btn>
-          </v-row>
+        <v-card-actions class="pr-4">
+          <v-spacer />
+          <v-btn
+            text
+            color="red"
+            @click="editSystem"
+          >
+            Cancel
+          </v-btn>
+          <v-btn
+            text
+            color="cyan"
+            @click="setMeasures"
+          >
+            Create
+          </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -68,11 +67,9 @@
 
 <script>
 import FlexMeasure from '@/components/LeadSheetComponents/MeasureComponents/FlexMeasure.vue';
-import Measure from './Measure.vue';
 
 export default {
   components: {
-    Measure,
     FlexMeasure,
   },
   props: {
