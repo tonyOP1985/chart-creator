@@ -84,28 +84,3 @@ export default {
   actions: localActions,
   mutations: localMutations,
 };
-
-// const testObj = {
-//   song: {
-//     meta: {
-//       title: '',
-//       key: ''
-//       // other meta things
-//     },
-//     form: [
-//       {
-//         systems: [
-//           {
-//             measures: [
-//               {
-//                 startRepeat: Boolean,
-//                 endsRepeat: Boolean,
-//                 beats: []
-//               }
-//             ]
-//           }
-//         ]
-//       }
-//     ]
-//   }
-// };
