@@ -66,6 +66,7 @@
 </template>
 
 <script>
+import { parseInteger } from '@/lib/utils';
 import FlexMeasure from '@/components/LeadSheetComponents/MeasureComponents/FlexMeasure.vue';
 
 export default {
@@ -121,7 +122,7 @@ export default {
       }
     },
     setMeasures() {
-      this.measures = parseInt(this.newMeasures, 10);
+      this.measures = parseInteger(this.newMeasures);
       this.editSystem();
     },
   },
