@@ -68,11 +68,9 @@
 
 <script>
 import FlexMeasure from '@/components/LeadSheetComponents/MeasureComponents/FlexMeasure.vue';
-import Measure from './Measure.vue';
 
 export default {
   components: {
-    Measure,
     FlexMeasure,
   },
   props: {
